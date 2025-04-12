@@ -11,6 +11,7 @@ import Comp2 from './Comp2';
 import Comp3 from './Comp3';
 import Comp4 from './Comp4';
 import Comp5 from './Comp5';
+import FlatlistComp from './FlatlistComp';
 
 const Comp1 = () => {
   const products = [
@@ -1806,18 +1807,19 @@ const Comp1 = () => {
         ListHeaderComponent={Comp5}
         initialNumToRender={2}
         renderItem={({item}) => (
-          <View style={styles.View}>
-            <Image style={styles.images} source={{uri: item.images[0]}} />
+          //   <View style={styles.View}>
+          //     <Image style={styles.images} source={{uri: item.images[0]}} />
 
-            <Text style={styles.Title}>{item.title}</Text>
-            <Text>{item.description}</Text>
-            <Text>
-              {'\u0AF1'}
-              {item.price}
-            </Text>
+          //     <Text style={styles.Title}>{item.title}</Text>
+          //     <Text>{item.description}</Text>
+          //     <Text>
+          //       {'\u0AF1'}
+          //       {item.price}
+          //     </Text>
 
-            {console.log(item.images[0])}
-          </View>
+          //     {console.log(item.images[0])}
+          //   </View>
+          <FlatlistComp item={item} />
         )}
         keyExtractor={product => product.id}
       />
