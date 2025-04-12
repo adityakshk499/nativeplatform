@@ -11,13 +11,15 @@ import {
 } from 'react-native';
 import React, {useState} from 'react';
 import Comp1 from './components/Comp1';
+import Map from './components/Map';
 
 const App = () => {
   const [count, setCount] = useState(0);
 
   return (
     <View style={styles.marginTop}>
-      <Comp1 hello={count} />
+      {/* <Comp1 hello={count} /> */}
+      <Map />
     </View>
   );
 };
