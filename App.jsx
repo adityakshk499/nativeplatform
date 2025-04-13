@@ -12,6 +12,7 @@ import {
 import React, {useState} from 'react';
 import Comp1 from './components/Comp1';
 import Map from './components/Map';
+import Section from './components/Section';
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -19,7 +20,8 @@ const App = () => {
   return (
     <View style={styles.marginTop}>
       {/* <Comp1 hello={count} /> */}
-      <Map />
+      {/* <Map /> */}
+      <Section />
     </View>
   );
 };
