@@ -13,7 +13,9 @@ import React, {useState} from 'react';
 import Comp1 from './components/Comp1';
 import Map from './components/Map';
 import Section from './components/Section';
-
+import './global.css';
+import UseEffectComp from './components/UseEffectComp';
+import Loader from './components/Loader';
 const App = () => {
   const [count, setCount] = useState(0);
 
@@ -21,7 +23,7 @@ const App = () => {
     <View style={styles.marginTop}>
       {/* <Comp1 hello={count} /> */}
       {/* <Map /> */}
-      <Section />
+      <UseEffectComp />
     </View>
   );
 };
@@ -30,7 +32,8 @@ export default App;
 
 const styles = StyleSheet.create({
   marginTop: {
-    marginTop: StatusBar.currentHeight + 30,
+    marginTop: StatusBar.currentHeight,
+    height: '100%',
   },
   ImageDimension: {
     width: '100%',

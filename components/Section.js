@@ -26,7 +26,7 @@ const Section = () => {
         sections={DATA}
         keyExtractor={(data, index) => data + index}
         renderItem={({item}) => {
-          return <Text style={{padding: 20}}>{item}</Text>;
+          return <Text className="text-right">{item}</Text>;
         }}
         renderSectionHeader={({section: {title}}) => <Text>{title}</Text>}
       />
