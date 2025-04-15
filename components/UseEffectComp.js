@@ -16,6 +16,9 @@ const UseEffectComp = () => {
     }
 
     fetchData();
+    return () => {
+      console.log('Unmounted');
+    };
   }, []);
 
   return (

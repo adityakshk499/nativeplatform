@@ -12,8 +12,6 @@ const FlatlistComp = ({item}) => {
         {'\u0AF1'}
         {item.price}
       </Text>
-
-      {console.log(item.images[0])}
     </View>
   );
 };

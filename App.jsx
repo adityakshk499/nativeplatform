@@ -16,14 +16,16 @@ import Section from './components/Section';
 import './global.css';
 import UseEffectComp from './components/UseEffectComp';
 import Loader from './components/Loader';
+import Switchandcompunmount from './components/Switchandcompunmount';
 const App = () => {
   const [count, setCount] = useState(0);
-
+  const [show, setShow] = useState(true);
   return (
     <View style={styles.marginTop}>
       {/* <Comp1 hello={count} /> */}
       {/* <Map /> */}
-      <UseEffectComp />
+      <Switchandcompunmount show={show} setShow={setShow} />
+      {show && <UseEffectComp />}
     </View>
   );
 };

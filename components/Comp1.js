@@ -1817,7 +1817,6 @@ const Comp1 = () => {
           //       {item.price}
           //     </Text>
 
-          //     {console.log(item.images[0])}
           //   </View>
           <FlatlistComp item={item} />
         )}
