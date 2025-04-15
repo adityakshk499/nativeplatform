@@ -32,7 +32,7 @@ export default App;
 
 const styles = StyleSheet.create({
   marginTop: {
-    marginTop: StatusBar.currentHeight,
+    // marginTop: StatusBar.currentHeight,
     height: '100%',
   },
   ImageDimension: {
