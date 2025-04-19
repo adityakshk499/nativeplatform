@@ -17,6 +17,7 @@ import './global.css';
 import UseEffectComp from './components/UseEffectComp';
 import Loader from './components/Loader';
 import Switchandcompunmount from './components/Switchandcompunmount';
+import AlertsComp from './components/AlertsComp';
 const App = () => {
   const [count, setCount] = useState(0);
   const [show, setShow] = useState(true);
@@ -24,8 +25,9 @@ const App = () => {
     <View style={styles.marginTop}>
       {/* <Comp1 hello={count} /> */}
       {/* <Map /> */}
-      <Switchandcompunmount show={show} setShow={setShow} />
-      {show && <UseEffectComp />}
+      {/* <Switchandcompunmount show={show} setShow={setShow} /> */}
+      {/* {show && <UseEffectComp />} */}
+      <AlertsComp />
     </View>
   );
 };
