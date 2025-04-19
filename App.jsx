@@ -8,6 +8,7 @@ import {
   TouchableHighlight,
   Touchable,
   TouchableNativeFeedback,
+  AppState,
 } from 'react-native';
 import React, {useState} from 'react';
 import Comp1 from './components/Comp1';
@@ -18,6 +19,7 @@ import UseEffectComp from './components/UseEffectComp';
 import Loader from './components/Loader';
 import Switchandcompunmount from './components/Switchandcompunmount';
 import AlertsComp from './components/AlertsComp';
+import AppStateComp from './components/AppStateComp';
 const App = () => {
   const [count, setCount] = useState(0);
   const [show, setShow] = useState(true);
@@ -27,7 +29,8 @@ const App = () => {
       {/* <Map /> */}
       {/* <Switchandcompunmount show={show} setShow={setShow} /> */}
       {/* {show && <UseEffectComp />} */}
-      <AlertsComp />
+      {/* <AlertsComp /> */}
+      <AppStateComp />
     </View>
   );
 };
